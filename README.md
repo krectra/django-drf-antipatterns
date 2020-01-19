@@ -28,6 +28,8 @@ Django is a phenomenal framework that lets you build stable web end development 
 
 [Django Docs on Signals](https://docs.djangoproject.com/en/1.11/topics/signals/). Signals are sometimes useful, but I have been burned so many times from things magically getting called that they are rarely worth the additional implementation cost. [See : Lincoln Loop's post](https://lincolnloop.com/blog/django-anti-patterns-signals/)
 
+Remember, Signals are sent out synchronously. 
+
 ## **Business Logic in models.py**
 
 All models start off pretty simple. Example: Dealership Inventory Management Software
@@ -59,6 +61,7 @@ class Car(models.Model):
 **Day Two**
 
 ## Model Managers
+## Business Logic in views.py
 ## Dynamic Key Constants (Oxymoron)
 ## Passing Objects into Celery
 ## Differences in Staging, Production and Dev
@@ -80,3 +83,4 @@ class Car(models.Model):
 ## Don't Use Middleware Components That Rely On Sync Requests
 ## Inverse Model Relationships (Is Your Foreign Key going the right direction?)
 ## Abuse of prefetch_related or select_related
+
