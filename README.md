@@ -84,3 +84,4 @@ class Car(models.Model):
 ## Inverse Model Relationships (Is Your Foreign Key going the right direction?)
 ## Abuse of prefetch_related or select_related
 
+## DB Statement Timeout
